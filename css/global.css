@@ -1,16 +1,19 @@
 @font-face {
     font-family: 'My Lucida';
     src: url('../font/LucidaGrande.ttf');
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
 }
 
 * { 
     font-family: 'My Lucida', Console;
+ 
 }
 
 body {
     background: linear-gradient(to bottom, #efefef, white) no-repeat;
+    
+
 }
 
 a {
@@ -20,6 +23,9 @@ a {
 
 .wrapper {
     padding: 25px 0;
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
 }
 
 body > header {
@@ -76,7 +82,20 @@ nav ul li {
 main header aside img {
     border: 1px solid #dadada;
     border-radius: 50%;
-    box-shadow: 0 0 5px #cecece;
+    box-shadow: 
+    0 0 5px #cecece;
+}
+
+.name-photo{
+    display:flex;   
+ 
+}
+
+.photo-user{
+    margin-left : 10px;
+    margin-right: 10px;
+  
+  
 }
 
 nav ul li:last-child {
@@ -106,6 +125,8 @@ h1 {
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .stats-links span, .stats-links a {
@@ -136,7 +157,7 @@ input.search {
     background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
     box-shadow: none;
     height: 28px;
-    width: 100%;
+    width: 40vw;
     font-size: 13px;
     padding: 3px 6px 3px 25px;
     border: 1px solid #d0dde9;
@@ -168,6 +189,19 @@ input.submit {
     background-image: url("../img/icon/station-white.png");
 }
 
+.intro-album{
+    display: flex;
+
+    align-items: center;
+  justify-content: space-between;
+}
+
+#albums{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+  
+}
 
 #albums article {
     font-size: 13px;
