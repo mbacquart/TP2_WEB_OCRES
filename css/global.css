@@ -227,6 +227,15 @@ input.submit {
     display: none;
   }
 }
+
+.share {
+  visibility: visible;
+}
+@media screen and (max-width: 550px) {
+  .share {
+    display: none;
+  }
+}
 main {
   width: 80%;
   margin: 25px;
